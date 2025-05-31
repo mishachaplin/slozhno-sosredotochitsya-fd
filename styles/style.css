@@ -85,7 +85,7 @@
   grid-row-start: 3;
   grid-row-end: 4;
   justify-self: end;
-  inline-size: 355px;
+  max-inline-size: 355px;
 }
 
 .header__decor-text {
@@ -148,7 +148,8 @@
   margin-block-start: 0;
 }
 
-.two-columns {
+.section-why,
+.section-how {
   grid-template-columns: 100%;
   grid-template-rows: repeat(2, auto);
 }
@@ -270,14 +271,15 @@
   }
 
   .header__subtitle {
-    inline-size: 364px;
+    max-inline-size: 364px;
   }
 
   .content-section {
     margin-block-start: 80px;
   }
 
-  .two-columns {
+  .section-why,
+  .section-how {
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 100%;
   }
@@ -287,17 +289,17 @@
     grid-row: 1 / 2;
   }
 
-  .two-columns .content-section__list {
+  .section-why .content-section__list {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
   }
 
-  .three-columns {
+  .section-what {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
   }
 
-  .three-columns .content-section__list {
+  .section-what .content-section__list {
     grid-column: 1 / 4;
     grid-row: 2 / 3;
   }
@@ -357,14 +359,20 @@
   }
 
   .header__subtitle {
-    inline-size: 491px;
+    max-inline-size: 491px;
   }
 
-  .two-columns {
+  .section-why,
+  .section-how {
     gap: 11px;
   }
 
-  .three-columns .content-section__list {
+  .section-what .content-section__list {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .content-section__list-item {
+    flex: 0 0 calc((100% - 40px) / 3);
   }
 }
