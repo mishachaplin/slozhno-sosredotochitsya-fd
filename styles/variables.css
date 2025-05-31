@@ -1,4 +1,25 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --padding-page: 10px;
+  --default-font-size: 18px;
+  --default-line-height: 1.3em;
+  --background-image: url(../images/cover-image-dark.png);
+  --display-decor: block;
+  --page-bg-color: #000028;
+  --title-color: #db00ff;
+  --accent-color: #ff0070;
+  --button-color: #ff0070;
+  --button-opaque: #ff007066;
+  --decor-color: #ff0070;
+  --section-title-color: #ff0070;
+  --section-subtitle-color: #000028;
+  --main-text-color: #f1b2ce;
+  --footer-shadow: #ff0070;
+  --title-shadow: #ff0070;
+  --footer-title-shadow: var(--title-shadow);
+}
+
+@media (768px <= width) {
+  :root {
+    --padding-page: 20px;
+  }
+}
