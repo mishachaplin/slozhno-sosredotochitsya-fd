@@ -1,3 +1,3 @@
-# СЛОЖНО СОСРЕДОТОЧИТЬСЯ
+## СЛОЖНО СОСРЕДОТОЧИТЬСЯ
 
-(https://github.com/mishachaplin/slozhno-sosredotochitsya-fd.git "Живет здесь") 
+[Живет здесь](https://github.com/mishachaplin/slozhno-sosredotochitsya-fd.git) 
